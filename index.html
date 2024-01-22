@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/RollerCoasterUSA.loader.js";
+      var loaderUrl = buildUrl + "/roller-coaster-usa.loader.js";
       var config = {
-        dataUrl: buildUrl + "/RollerCoasterUSA.data.unityweb",
-        frameworkUrl: buildUrl + "/RollerCoasterUSA.framework.js.unityweb",
-        codeUrl: buildUrl + "/RollerCoasterUSA.wasm.unityweb",
+        dataUrl: buildUrl + "/roller-coaster-usa.data.unityweb",
+        frameworkUrl: buildUrl + "/roller-coaster-usa.framework.js.unityweb",
+        codeUrl: buildUrl + "/roller-coaster-usa.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "The Super Challenge",
         productName: "Roller Coaster USA",
@@ -98,6 +98,7 @@
         canvas.style.height = "640px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/roller-coaster-usa.jpg.unityweb') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
